@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>User detail</h1>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputName">Name:</label>
+
+            <div class="controls">
+                <input type="text" id="inputName" ng-model="user.name"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputAge">Age:</label>
+
+            <div class="controls">
+                <input type="number" id="inputAge" ng-model="user.age"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputAdmin">Admin:</label>
+
+            <div class="controls">
+                <input type="checkbox" id="inputAdmin" ng-model="user.admin"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputCreatedDate">Created Date:</label>
+
+            <div class="controls">
+                <input type="datetime-local" id="inputCreatedDate" ng-model="user.createdDate" format-date />
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="cancel()" class="btn btn-small">cancel</a>
+                <a ng-click="updateUser()" class="btn btn-small btn-primary">update user</a>
+            </div>
+        </div>
+    </form>
+</div>

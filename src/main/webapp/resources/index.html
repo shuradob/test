@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="ru" ng-app="test">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Users</title>
+
+    <link href="/resources/lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="main_container">
+
+    <div class="inner">
+
+<!--        <h3>Views Menu</h3>
+
+        <ul>
+            <li><a href="#/user-list">user-list</a></li>
+            <li><a href="#/user-detail/1">user-detail/1</a></li>
+            <li><a href="#/user-creation">user-creation</a></li>
+        </ul>-->
+
+        <div ng-view></div>
+
+    </div>
+
+</div>
+
+<!-- Downloaded Scripts -->
+
+<script src="/resources/lib/angular.min.js"></script>
+<script src="/resources/lib/angular-route.min.js"></script>
+<script src="/resources/lib/angular-resource.min.js"></script>
+<script src="/resources/lib/bootstrap/js/bootstrap.js"></script>
+
+<!-- Created Scripts -->
+
+<!-- AngularJS App Code ==================================================== -->
+<script src="resources/js/app.js"></script>
+<script src="resources/js/services.js"></script>
+<script src="resources/js/controllers.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/directives.js"></script>
+
+</body>
+</html>

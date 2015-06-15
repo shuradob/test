@@ -1,0 +1,39 @@
+<div class="container">
+    <h1>Create a new user</h1>
+
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputName">First name:</label>
+
+            <div class="controls">
+                <input type="text" id="inputName" ng-model="user.name" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputAge">Age:</label>
+
+            <div class="controls">
+                <input type="number" id="inputAge" ng-model="user.age" placeholder="00"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputAdmin">Admin:</label>
+
+            <div class="controls">
+                <input type="checkbox" id="inputAdmin" ng-model="user.admin"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputCreatedDate">Created Date:</label>
+
+            <div class="controls">
+                <input type="datetime-local" id="inputCreatedDate" ng-model="user.createdDate" format-date placeholder="yyyy-MM-ddTHH:mm:ss" />
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="createNewUser()" class="btn btn-small btn-primary">create new user</a>
+            </div>
+        </div>
+    </form>
+</div>
